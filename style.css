@@ -1,0 +1,357 @@
+@font-face {
+  font-family: "Rubik-Light";
+  src: url("fonts/Rubik-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url("fonts/Rubik-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url("fonts/Rubik-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik-Black";
+  src: url("fonts/Rubik-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik-ExtraBold";
+  src: url("fonts/Rubik-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url("fonts/Rubik-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+@-webkit-keyframes title-animation{
+  from{
+    padding-top: 0;
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+    padding-top: 80px;
+  }
+}
+@-webkit-keyframes main-animation{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+body, html{
+  margin: 0 auto;
+  border: 0;
+}
+.class-title{
+  font-family: "Ubuntu-Bold";
+  font-size: 100px;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 2px;
+  animation-name: title-animation;
+  animation-duration: 1s;
+  user-select: none;
+}
+.head-menu{
+  width: 1200px;
+  height: 70px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  background: linear-gradient(#0EAFF0,#0DA4E0);
+  position: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Ubuntu-Bold";
+  animation-name: main-animation;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+.text-head-menu{
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-head-menu ul{
+  display: inline-flex;
+  justify-content:space-around;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+.text-head-menu ul li{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+  color: white;
+}
+.head-img{
+  filter: invert(10);
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.2s ease
+}
+.text-head-menu ul li a:active{
+  color: white;
+}
+.text-head-menu ul li a:visited{
+  color: white;
+}
+.text-head-menu ul li a{
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.text-head-menu ul li a:hover{
+  color: #2c2c2c;
+  .head-img{
+    filter: invert(0);
+  }
+}
+ul{
+  list-style: none; /*убираем маркеры списка*/
+}
+.timetable{
+  border-collapse: collapse;
+  width: auto;
+  table-layout: fixed;
+  border: solid 1px #a0a0a0;
+  box-shadow: 0 0 2px;
+  border-radius: 30px;
+  display: flex;
+  font-size: 20px;
+  background-color: #FAFAFA;
+}
+.timetable tr td:not(.right, .number, .week-right){
+  border: 1px solid #a0a0a0;
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.week{
+  border: 1px solid #a0a0a0;
+  text-align: center;
+  font-family: "Rubik-Bold"
+}
+.week-right, .right{
+  border-left: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+  border-top: 1px solid #a0a0a0;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.number{
+  border-right: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+  border-top: 1px solid #a0a0a0;
+  font-family: "Rubik-Medium";
+  padding: 15px;
+}
+.timetable tr td:not(.week, .number, .week-right){
+  font-family: "Rubik-Light";
+}
+.week-right{
+  font-family: "Rubik-Bold";
+  text-align: center;
+}
+.div-table{
+  display: flex;
+  justify-content:center;
+  padding: 0;
+}
+.timetable tr:first-child>td{
+  border-top:none
+}
+.timetable tr:last-child>td{
+  border-bottom:none
+}
+.gray{
+  background-color: #e7e7e7;
+}
+.time-lessons{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  justify-content: center;
+  display: flex;
+  font-family: "Rubik-ExtraBold";
+  font-size: 40px;
+  padding-top: 10px;
+}
+.tableandlessons{
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1100px;
+  border-radius: 31px;
+}
+.news{
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.lenta{
+  font-family: "Rubik-Black";
+  font-size: 80px;
+}
+.news-list{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background-color: #FAFAFA;
+  display: flexbox;
+  text-align: left;
+  border: solid 1px #a0a0a0;
+  box-shadow: 0 0 2px;
+}
+.new{
+  margin: 20px;
+}
+.new-title{
+  font-family: "Rubik-Regular";
+  font-size: 55px;
+  margin: 0;
+  margin-left: 30px;
+}
+.new-text{
+  margin-left: 20px;
+  font-size: 25px;
+  font-family: "Rubik-Regular";
+  color: #4F4F4F;
+}
+.new-image{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.new img{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+}
+.data{
+  font-size: 20px;
+  font-family: "Rubik-Light";
+  color: #A8A8A8;
+  display: flex;
+  margin-right: 15px;
+  justify-content: right;
+}
+a{
+  text-decoration: none
+}
+a:hover{
+  text-decoration: underline;
+}
+.lifehacks{
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.life-text{
+  font-family: "Rubik-Black";
+  font-size: 90px;
+}
+.hack{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #a0a0a0;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 2px;
+}
+.title{
+  font-size: 40px;
+  font-family: "Rubik-Regular";
+  margin: 0px;
+}
+.head-gallery{
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.head-gallery p{
+  font-family: "Ubuntu-Bold";
+  font-size: 50px;
+}
+.main-gallery{
+  display: flex;
+  flex-direction: column;
+}
+.gallery-img img{
+  max-width: 400px;
+  height: auto;
+  border-radius: 50px;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 5px;
+}
+.gallery-img{
+  margin: 0;
+}
+.main-main-gallery{
+  display: inline-flex;
+  justify-content: space-between;
+}
+.achiv{
+  font-family: "Rubik-Bold";
+  width: 500px;
+  text-align: center;
+  display: flexbox;
+  font-size: 20px;
+  border-radius: 50px;
+  margin: 50px;
+  border: solid rgb(184, 183, 183) 1px;
+}
+.achiv img{
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.achiv-box{
+  display: flex;
+  justify-content: center;
+}
+.rukov-main{
+  font-family: "Rubik-ExtraBold";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+.name-rukov{
+  font-family: "Rubik-Regular";
+  font-size: 25px;
+}
+.rukov img{
+  width: 300px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.rukov-border{
+  border-radius: 30px;
+  border: solid 1px rgb(180, 180, 180);
+}
