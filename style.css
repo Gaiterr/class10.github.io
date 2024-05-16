@@ -217,7 +217,7 @@ ul{
   margin-bottom: 30px;
   border-radius: 20px;
   background-color: #FAFAFA;
-  display: flexbox;
+  display: flex;
   text-align: left;
   border: solid 1px #a0a0a0;
   box-shadow: 0 0 2px;
@@ -318,21 +318,28 @@ a:hover{
   font-family: "Rubik-Bold";
   width: 500px;
   text-align: center;
+  align-items: center; 
   display: flexbox;
   font-size: 20px;
   border-radius: 50px;
-  margin: 50px;
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
   border: solid rgb(184, 183, 183) 1px;
 }
 .achiv img{
   width: 400px;
   height: auto;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
+  vertical-align: middle;
 }
 .achiv-box{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: auto;
 }
 .rukov-main{
   font-family: "Rubik-ExtraBold";
@@ -340,7 +347,6 @@ a:hover{
   display: flex;
   justify-content: center;
   text-align: center;
-
 }
 .name-rukov{
   font-family: "Rubik-Regular";
@@ -354,4 +360,41 @@ a:hover{
 .rukov-border{
   border-radius: 30px;
   border: solid 1px rgb(180, 180, 180);
+}
+.shl{
+  font-family: "Rubik-ExtraBold";
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+.shl p{
+  margin: 30px;
+}
+.classmates{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: "Rubik-Light";
+}
+.classmate{
+  text-align: center;
+  width: 130px;
+  margin: 10px;
+  padding: 10px;
+  display: flexbox;
+  border-radius: 30px;
+  word-wrap: break-word;
+  border: solid 1px rgb(180, 180, 180);
+}
+.classmate img{
+  margin: auto;
+  display: flex;
+  width: 120px;
+  border-radius: 50%;
+}
+.classmate p{
+  margin: 5px;
 }
