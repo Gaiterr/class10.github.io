@@ -246,6 +246,7 @@ ul{
   margin-left: 20px;
   margin-bottom: 20px;
   max-width: 500px;
+  max-height: 350px;
   height: auto;
   border-radius: 20px;
 }
@@ -287,7 +288,7 @@ a:hover{
   margin: 0px;
 }
 .head-gallery{
-  width: 1100px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -298,6 +299,7 @@ a:hover{
 .main-gallery{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .gallery-img img{
   max-width: 400px;
@@ -309,6 +311,8 @@ a:hover{
 }
 .gallery-img{
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 .main-main-gallery{
   display: inline-flex;
@@ -326,6 +330,9 @@ a:hover{
   margin-left: 25px;
   margin-right: 25px;
   border: solid rgb(184, 183, 183) 1px;
+}
+.achiv p{
+  margin: 40px;
 }
 .achiv img{
   width: 400px;
@@ -397,4 +404,12 @@ a:hover{
 }
 .classmate p{
   margin: 5px;
+}
+.tg{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-family: "Rubik-Light";
+  text-align: center;
+  font-size: 15px;
+  color:#858585
 }
